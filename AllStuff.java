@@ -31,6 +31,7 @@ class AllStuff {
         char myLetter = 'E';        // single quotes
         System.out.println("a lot like Python! " + myNum);
         
+        
         // math stuff--------------------------------
         //a lot like Python
         int ans = myNum*2;
