@@ -1,15 +1,15 @@
 /*
 Goal: the basics
-printing
-variables (and data types)
-calculatons
-conditionals (if, etc)
-keyboard input
-loops (for and while)
+        printing
+        variables (and data types)
+        calculatons
+        conditionals (if, etc)
+        keyboard input
+        loops (for and while)
 
 ***NOTE***
-We'll learn all of these topics (and more!)
-in greater detail throughout Unit 1
+        We'll learn all of these topics (and more!)
+        in greater detail throughout Unit 1
 */
 
 import java.util.Scanner;
@@ -59,7 +59,8 @@ class AllStuff {
         Scanner s = new Scanner(System.in);
         System.out.print("\n\ntype a positive integer (not too large): ");
         int max = s.nextInt(); // use nextLine() for strings
-            
+  
+        
         // for loops---------------------------------------
         System.out.println("the factors of " + max + " are: ");
         for (int i = 1; i<max; i++){
@@ -67,8 +68,6 @@ class AllStuff {
                 System.out.println(i);
             }
         }
-
-
 
         
         int sum = 0;
