@@ -1,4 +1,8 @@
-import java.util.Random;
+// Differences you'll see in Java:
+// any imports must be at the top
+// variables must be assigned a type, this type cannot change
+// math operations depend on the type of variable / data
+// methods can be defined in any order
 
 public class Day1{
     public static void main(String[] args){
@@ -23,16 +27,14 @@ public class Day1{
 
 
         // quadratic formula
-        // import *must* be at top
-        Random myRand = new Random();
         int a = 0;
         int b = 0;
         int c = 0;
         int count = 0;
         for(int i = 0; i<1000; i++){
-            a = myRand.nextInt(21) - 10;
-            b = myRand.nextInt(21) - 10;
-            c = myRand.nextInt(21) - 10;
+            a = (int)(Math.random()*21) - 10;
+            b = (int)(Math.random()*21) - 10;
+            c = (int)(Math.random()*21) - 10;
             if(b*b-4*a*c >= 0){
                 count += 1;
             }
@@ -50,13 +52,12 @@ public class Day1{
     } // close main
 
     public static int experiment(){
-        Random r = new Random();
         int children = 0;
         char child = ' ';
         int num = 0;
         int count = 0;
         while(child != 'b'){
-            num = r.nextInt(2)+1;
+            num = (int)(Math.random()*2) + 1;
             if(num==1) child = 'b';
             else child = 'g';
             count += 1;
