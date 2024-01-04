@@ -55,14 +55,13 @@ public class Day1{
         int children = 0;
         char child = ' ';
         int num = 0;
-        int count = 0;
         while(child != 'b'){
             num = (int)(Math.random()*2) + 1;
             if(num==1) child = 'b';
             else child = 'g';
-            count += 1;
+            children += 1;
         }
-        return count;
+        return children;
 
     } // close function
 
